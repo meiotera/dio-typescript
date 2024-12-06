@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Define a versão do JavaScript para saída
+    "module": "commonjs", // Módulo padrão para Node.js
+    "strict": true, // Habilita todas as verificações rigorosas
+    "esModuleInterop": true, // Suporte para imports padrão
+    // "skipLibCheck": true, // Ignora verificações de tipo em arquivos de declaração
+    //"outDir": "./dist", // Diretório de saída para arquivos compilados
+    "rootDir": "./src" // Diretório raiz dos arquivos TypeScript
+  },
+  "include": ["src/**/*"], // Arquivos a serem incluídos na compilação
+  "exclude": ["node_modules", "dist"] // Arquivos/diretórios a serem excluídos
+}
