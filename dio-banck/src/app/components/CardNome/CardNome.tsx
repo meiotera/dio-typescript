@@ -5,13 +5,13 @@ import wellcome from "@/app/services/wellcome";
 export default function CardNome() {
   const [nome, setNome] = useState("");
 
-  const handleInputChange: any = (
+  const handleInputChange = (
     event: React.ChangeEvent<HTMLInputElement>
-  ) => {
+  ): void => {
     setNome(event.target.value);
   };
 
-  const handleSave = () => {
+  const handleSave = (): void => {
     if (nome.trim() === "") {
       alert("Por favor, insira um nome.");
       return;
